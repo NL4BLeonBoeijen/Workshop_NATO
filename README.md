@@ -11,3 +11,7 @@ If cf --version does not work after install of Cloud Foundry, then you need to m
 Open a CMD in administrator mode and execute following command:
 ```
 mklink "c:\Program Files\Cloud Foundry\cf.exe" "c:\Program Files\Cloud Foundry\cf8.exe"
+```
+
+- [ ] Uncompleted Task
+- [x] Completed Task
