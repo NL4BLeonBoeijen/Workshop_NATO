@@ -1,9 +1,8 @@
-<a name="TOP"></a>
-# Workshop_NATO
+# Workshop_NATO<a name="TOP"></a>
 
 Workshop for NATO ABAP/Fiori Elements
 
-# Blogs
+## Blogs
 
 [Connecting from SAP Business Application Studio to SAP ABAP Environment in BTP](https://blogs.sap.com/2021/07/23/connecting-from-sap-business-application-studio-to-sap-abap-environment-in-btp/)
 

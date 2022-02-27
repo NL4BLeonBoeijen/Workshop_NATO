@@ -1,16 +1,16 @@
-<a name="TOP"></a>
+# Markdown Cheatsheet<a name="TOP"></a>
 
-# Section 1<a name="1"></a>
+## Section 1<a name="1"></a>
 
-## Section 1a <a name="1a"></a>
+### Section 1a <a name="1a"></a>
 
-_Emphasized text_ or _Emphasized text_
+Exampe: _Cursive_
 
-~~Strikethrough text~~
+Exampe: ~~Strikethrough text~~
 
-__Strong text__ or __Strong text__
+Exampe: __Bold__
 
-___Strong emphasized text___ or *__Strong emphasized text__*
+Exampe: ___Bold & Cursive___
 
 - [ ] Uncompleted Task
 - [x] Completed Task
