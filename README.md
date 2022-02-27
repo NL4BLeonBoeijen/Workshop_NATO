@@ -28,4 +28,23 @@ mklink "c:\Program Files\Cloud Foundry\cf.exe" "c:\Program Files\Cloud Foundry\c
   * Sublist 2.1
     * sublist 2.1.2
 
-`code()`
+`code() "Single line of code`
+```javascript
+var specificLanguage_code = 
+    {
+        "data": {
+            "lookedUpPlatform": 1,
+            "query": "Kasabian+Test+Transmission",
+            "lookedUpItem": {
+                "name": "Test Transmission",
+                "artist": "Kasabian",
+                "album": "Kasabian",
+                "picture": null,
+                "link": "http://open.spotify.com/track/5jhJur5n4fasblLSCOcrTp"
+            }
+        }
+    }
+```
+<kbd>⌘F</kbd>
+
+:/play secret:
