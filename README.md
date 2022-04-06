@@ -15,3 +15,11 @@ Open a CMD in administrator mode and execute following command:
 ```shell
 mklink "c:\Program Files\Cloud Foundry\cf.exe" "c:\Program Files\Cloud Foundry\cf8.exe"
 ```
+
+Login to cf</br>
+Start a terminal and execute the following:
+> cf login -a \<API-URL> </br>
+> and enter your email, password and select your organisation and space.
+```shell
+cf login -a https://api.cf.us10.hana.ondemand.com
+```
