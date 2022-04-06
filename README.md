@@ -23,3 +23,7 @@ Start a terminal and execute the following:
 ```shell
 cf login -a https://api.cf.us10.hana.ondemand.com
 ```
+
+If Fiori Template wizard niet wil starten:</br>
+Uninstall the existing generator with the command: `npm uninstall -g @sap/generator-fiori`.</br>
+Then try and install the generator again by executing: `npm i -g @sap/generator-fiori`.
