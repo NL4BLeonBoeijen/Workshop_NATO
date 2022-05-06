@@ -54,6 +54,7 @@ The installation of the dependencies may take a few moments.</br>
 ![](../../Images/018.png)</br>
 When is is done you will see a page with Application Information.
 ![](../../Images/019.png)</br>
+Press *Preview Application* to start the application.
 
 # Open the project folder and activate GIT.
 Open the projects folder.</br>
