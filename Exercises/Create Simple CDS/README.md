@@ -8,7 +8,7 @@ Add the fields: Id, CustomerId, _Customer.name and GrossAmount.</br>
 @AbapCatalog.preserveKey: true
 @AccessControl.authorizationCheck: #CHECK
 @EndUserText.label: 'Simple CDS'
-define view ZWS98_CDS_Simple as select from ztmcds9_i_so {
+define view ZWS##_CDS_Simple as select from ztmcds9_i_so {
     key Id as SalesOrderID,
     CustomerId as CustomerID,
     _Customer.name as CustomerName,
@@ -28,7 +28,7 @@ Enter Name **ZUI_WKSP_##** and enter a description.
 
 Add your CDS as the entity name and give it a nice name like SimpleCDS.
 ```ABAP
-@EndUserText.label: 'UI 98 Service Definition'
+@EndUserText.label: 'UI ## Service Definition'
 define service ZUI_WKSP_## {
     expose ZWS##_CDS_Simple as SimpleCDS; 
 }
@@ -62,7 +62,7 @@ When you have added the annotations to your CDS, open the Preview again and see 
 @EndUserText.label: 'Simple CDS'
 @UI.headerInfo.typeName: 'Sales Order'
 @UI.headerInfo.typeNamePlural: 'Sales Orders'
-define view ZWS98_CDS_Simple as select from ztmcds9_i_so {
+define view ZWS##_CDS_Simple as select from ztmcds9_i_so {
 @UI.lineItem: [{position: 10 }]
     key Id as SalesOrderID,
     CustomerId as CustomerID,
@@ -76,13 +76,13 @@ define view ZWS98_CDS_Simple as select from ztmcds9_i_so {
 Create a Meta Data Extension for your CDS.
 Add the annotation **@Metadata.allowExtensions: true** to your Simple CDS above the *define* line.</br>
 ```ABAP CDS
-@AbapCatalog.sqlViewName: 'ZWS98CDSBASIC'
+@AbapCatalog.sqlViewName: 'ZWS##CDSBASIC'
 @AbapCatalog.compiler.compareFilter: true
 @AbapCatalog.preserveKey: true
 @AccessControl.authorizationCheck: #CHECK
 @EndUserText.label: 'Basic CDS'
 @Metadata.allowExtensions: true
-define view ZWS98_CDS_Basic as select from ztmcds9_i_so {
+define view ZWS##_CDS_Basic as select from ztmcds9_i_so {
     key Id as SalesOrderID,
     CustomerId as CustomerID,
     _Customer.name as CustomerName,
@@ -95,7 +95,7 @@ And add the annotations for the fields to this file.
 @Metadata.layer: #CUSTOMER
 @UI.headerInfo.typeName: 'Sales Order'
 @UI.headerInfo.typeNamePlural: 'Sales Orders'
-annotate view ZWS98_CDS_Basic with
+annotate view ZWS##_CDS_Basic with
 {
   @UI.lineItem: [{position: 10 }]
   SalesOrderID;
@@ -106,4 +106,4 @@ annotate view ZWS98_CDS_Basic with
 }
 ```
 > Result:
-> ![](../../Images/006.png)
+> ![](../../Images/006.png)</br>
