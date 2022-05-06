@@ -2,6 +2,9 @@
 
 Workshop for NATO ABAP/Fiori Elements
 
+## [Setup Workstation]()
+
+## [Exercises](./Exercises/README.md)
 ## Blogs
 
 [Connecting from SAP Business Application Studio to SAP ABAP Environment in BTP](https://blogs.sap.com/2021/07/23/connecting-from-sap-business-application-studio-to-sap-abap-environment-in-btp/)
