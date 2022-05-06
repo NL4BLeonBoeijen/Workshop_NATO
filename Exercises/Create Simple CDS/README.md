@@ -15,3 +15,7 @@ define view ZWS98_CDS_Simple as select from ztmcds9_i_so {
     GrossAmount
 }
 ```
+Activate your CDS using CTRL-F3.</br>
+Test your CDS by opening it with **Data Preview**. This should result in a list of records.
+![Result List](../../Images/1.png)
+<img src="../../Images/1.png" width="60%">
