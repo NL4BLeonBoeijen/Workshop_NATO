@@ -69,6 +69,16 @@ Enter the Projects Attributes
 ![Deployment Configuration](../../Images/015.png)</br>
 
 * Press <kbd>Next</kbd></br>
+
+Enter Fiori Launchpad settings
+
+| Name | Value |
+| ------------ | ------------- |
+| Semantic Object | NATO |
+| Action | BasicList |
+| Title | Basic List |
+| Subtitle (optional) | Workshop |
+
 ![Fiori Launchpad Configuration](../../Images/016.png)</br>
 
 * Press <kbd>Finish</kbd></br>
