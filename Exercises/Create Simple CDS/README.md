@@ -36,13 +36,13 @@ define service ZUI_WKSP_## {
 ## Create Service Binding
 Now we are going to expose the Service Definition by creating a Service Binding.</br>
 Right click on your Package and select *New* **Other ABAP Repository Object**, then type *Service* and select **Service Binding**.</br>
-Enter Name **ZUI_WKSP_##** and enter a description. Then select *Binding Type* **OData V4 - UI**, and then enter your Service Definition. You can start typing the first letters of your Service Definition and then use CTRL+SPACE for Auto Complete, or use the *Browse* button.</br>
+Enter Name **ZUI_WKSP_##** and enter a description. Then select *Binding Type* **OData V4 - UI**, and then enter your Service Definition. You can start typing the first letters of your Service Definition and then use CTRL+SPACE for Auto Complete, or use the <kbd>Browse</kbd> button.</br>
 ![](../../Images/002.png)
 Activate your Service Binding and then push Publish (this may take a few seconds). Your Service Binding is now ready to be used.</br>
 If you press the ServiceURL a browser will be started and it will open the ROOT URL for your service.
 >![](../../Images/003.png)
 
-If you select an Entity Set and press the *Preview* button, it will open a browser with an example application. But you still need to goto the settings to select the columns you want to display.
+If you select an Entity Set and press the <kbd>Preview</kbd> button, it will open a browser with an example application. But you still need to goto the settings to select the columns you want to display.
 > ![](../../Images/004.png)
 
 >![](../../Images/005.png)

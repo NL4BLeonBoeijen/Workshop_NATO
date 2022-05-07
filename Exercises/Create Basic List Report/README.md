@@ -33,32 +33,33 @@ Open/Create your Dev Space.
 
 There are two options to start the Fiori Template Wizard.</br>
 1. From the Welcome page you select *Start from template* and then select the **SAP Fiori application**
-2. From the menu select *View* then *Find Command... (Ctrl+shift+P)* and then type **Fiori: Open Application Generator**
+2. From the menu select *View* then *Find Command... (<kbd>Ctrl</kdb>+<kbd>shift</kbd>+<kbd>P</kbd>)* and then type **Fiori: Open Application Generator**
 
-Select the Application Type: **SAP Fiori elements**, and select the **List Report Object Page** and press *Next*.</br>
+* Select the Application Type: **SAP Fiori elements**, and select the **List Report Object Page** and press <kbd>Next</kbd>.</br>
 In the Data source select *Connect to a System*, in the System select *your abap-cloud-default..(BTP)*. It will now look for the OData services on the Trial ABAP Cloud system, this may take a minute.</br>
 In the Service select your Service Binding ZUI_WKSP_##.
 ![](../../Images/012.png)</br>
-Press *Next*</br>
-Select your **BasicList** as the *Main entity*.
+* Press <kbd>Next</kbd></br>
+* Select your **BasicList** as the *Main entity*.
 ![](../../Images/013.png)</br>
-Press *Next*</br>
+* Press <kbd>Next</kbd></br>
 ![](../../Images/014.png)</br>
-Press *Next*</br>
+* Press <kbd>Next</kbd></br>
 ![](../../Images/015.png)</br>
-Press *Next*</br>
+* Press <kbd>Next</kbd></br>
 ![](../../Images/016.png)</br>
-Press *Finish*</br>
+* Press <kbd>Finish</kbd></br>
 ![](../../Images/017.png)</br>
-The installation of the dependencies may take a few moments.</br>
+* The installation of the dependencies may take a few moments.</br>
 ![](../../Images/018.png)</br>
-When is is done you will see a page with Application Information.
+* When is is done you will see a page with Application Information.
 ![](../../Images/019.png)</br>
-Press *Preview Application* to start the application.
+* Press *Preview Application* to start the application.
 
 # Open the project folder and activate GIT.
-Open the projects folder.</br>
-Click on the *GIT* tab. ![](../../Images/020.png) and press the + Plus button.![](./../../Images/021.png).</br>
-This will instantiate the GIT source control. Enter a message, e.g.: **Initial** and press CTRL+Enter.</br>
+* Open the projects folder.</br>
+* Click on the *GIT* tab. ![](../../Images/020.png) and press the + Plus button.![](./../../Images/021.png)</br>
+* This will instantiate the GIT source control. Enter a message, e.g.: **Initial** and press **CTRL+Enter**.</br>
 ![](../../Images/022.png)</br>
-Select *Always* in the popup.![](../../Images/023.png)</br>
+Select *Always* in the popup.</br>
+![](../../Images/023.png)</br>
