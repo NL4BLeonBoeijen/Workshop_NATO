@@ -13,3 +13,5 @@
 ## 6. [Add Search and Filters to List Report](./Add%20Search%20and%20Filters/README.md)
 
 ## 7. [Create List Report Object Page](./Create%20List%20Object/README.md)
+
+## 8. [External Navigation and Visualiztion](./External%20Navigation%20and%20Vizualisation/README.md)
