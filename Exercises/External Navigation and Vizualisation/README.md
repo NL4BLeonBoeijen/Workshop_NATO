@@ -12,7 +12,7 @@
 | 30 | supplier_id |
 | 40 | _Supplier.name | SupplierName |
 
-* Make the field SupplierName an external link to *https://www.google.com/search?q=**SupplierName***.
+* Make the field SupplierName an external link to *<https://www.google.com/search?q>=**SupplierName***.
 * Add the new CDS to your *Service Definition* and use the *Preview* option in your *Service Binding* to test your result.
 
 ```ABAP CDS
