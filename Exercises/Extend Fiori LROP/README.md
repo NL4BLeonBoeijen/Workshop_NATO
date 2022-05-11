@@ -1,4 +1,4 @@
-# Extend Fiori Element Application
+# Extend Fiori Elements List Report Object Page Application
 
 ## Task 1: Create a Fiori elements Extension application **
 
