@@ -1,4 +1,4 @@
-# ![nato](Images/nato.png) Workshop NATO ![nl4b](Images/nl4b.png)
+# ![nato](Images/nato.png)</br>Workshop NATO</br>![nl4b](Images/nl4b.png)
 
 ## Workshop for NATO ABAP/Fiori Elements
 
