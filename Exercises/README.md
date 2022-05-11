@@ -19,3 +19,5 @@
 ## 9. [Overview Page](./Overview%20Page/README.md)
 
 ## 10. [Analytical List Page](./Analytical%20List%20Page/README.md)
+
+## 11. [Extend Fiori Element Application](../Exercises/Extend%20Fiori/README.md)
