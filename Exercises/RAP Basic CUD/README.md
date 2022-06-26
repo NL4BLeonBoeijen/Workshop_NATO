@@ -1,4 +1,4 @@
-# RAP Basics add Delete, Update, Create.
+# RAP Basics add Delete, Update, Create
 
 ## Create a *Managed Behavior* for your CDS only for Delete
 
