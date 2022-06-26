@@ -119,7 +119,7 @@ sap.ui.define([
     return {
         getCustomFilters: function () {
             /* This method returns a filter object to the OVP library. If there are multiple filters, they should 
-            be clubbed into single Filter object. */		
+            be clubbed into single Filter object. */
             var sSelectedKey = this.oView.byId("CustomProductName").getSelectedKey();
             var aFilters = [], oFilter1;
 
@@ -179,6 +179,7 @@ sap.ui.define([
 |Controller file name prefix|CustomCard|
 
 *Insert Snippet* and *Next*</br>![Insert Snippet](../../Images/151.png)
+
 * This creates a new folder **customCard** with file **Component.js**</br>![New Fragment](../../Images/153.png)
 * In *Step 2* *Insert Snippet* and *Next*</br>![Next](../../Images/152.png)
 * This creates a new file **CustomCard.controller.js**</br>![CustomCard controller](../../Images/154.png)
@@ -215,3 +216,5 @@ xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1">
 ```
 
 * Preview Application</br>![Preview Application](../../Images/161.png)
+
+[Back to Exercises](../README.md)

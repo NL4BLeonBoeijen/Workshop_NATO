@@ -198,3 +198,5 @@ define view ZWS##_CDS_LIST_SEARCH
 
 * Filter for *CustomerId*![ValueHelp CustomerId](../../Images/067.png)
 * Filter for *CreationDate*![ValueHelp CreationDate](../../Images/068.png)
+
+[Back to Exercises](../README.md)

@@ -7,7 +7,7 @@
 * Set the *alias* to **Customer*
 * Remove the **create** and **update** options:
 
-``` ABAP
+```ABAP
 managed implementation in class zbp_ws##_cds_rap_basic unique;
 
 define behavior for ZWS##_CDS_RAP_BASIC alias Customer
@@ -25,7 +25,7 @@ authorization master ( instance )
 * Next click on the Class name in the Behavior and see the proposal in the *Quick Assist* tab.
 * Double click the Proposal to generate the class
 
-``` ABAP
+```ABAP
 CLASS zbp_ws##_cds_rap_basic DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zws##_cds_rap_basic.
 ENDCLASS.
 
@@ -33,7 +33,7 @@ CLASS zbp_ws##_cds_rap_basic IMPLEMENTATION.
 ENDCLASS.
 ```
 
-``` ABAP
+```ABAP
 CLASS lhc_Customer DEFINITION INHERITING FROM cl_abap_behavior_handler.
   PRIVATE SECTION.
 
@@ -64,7 +64,7 @@ ENDCLASS.
 
 * Add the **update** option to the Behavior Definition.
 
-``` ABAP
+```ABAP
 managed implementation in class zbp_ws##_cds_rap_basic unique;
 
 define behavior for ZWS##_CDS_RAP_BASIC alias Customer
@@ -86,8 +86,20 @@ authorization master ( instance )
 * When you press the edit button you are able to change the *key* field **ID**. That is not wat we want.
 * To prevent this we add **field (readonly) ID;** to the Behavior Definition. This will make the ID field read only.
 
-``` ABAP
+```ABAP
+managed implementation in class zbp_ws##_cds_rap_basic unique;
 
+define behavior for ZWS##_CDS_RAP_BASIC alias Customer
+persistent table ZWS##_DT_CUST
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  update;
+  delete;
+
+  field (readonly) ID;
+}
 ```
 
 * Activate and the V2 application again.
@@ -96,7 +108,7 @@ authorization master ( instance )
 
 * Add the **create** option to the Behavior Definition.
 
-``` ABAP
+```ABAP
 managed implementation in class zbp_ws##_cds_rap_basic unique;
 
 define behavior for ZWS##_CDS_RAP_BASIC alias Customer
@@ -125,7 +137,7 @@ etag master Lchg_Date_Time
 * Double click the word **create** to use the *Quick Assist* to generate a new method
 * Implement the new method by checking the MAX number in the table and adding 1 to that max number.
 
-``` ABAP
+```ABAP
 METHOD earlynumbering_create.
 
     LOOP AT entities INTO DATA(entity) WHERE id IS NOT INITIAL.
@@ -154,3 +166,5 @@ METHOD earlynumbering_create.
 * Activate the Behavior Definition.
 * Test the application again.
 * You now see that when you press save the record gets the next number in the table.
+
+[Back to Exercises](../README.md)

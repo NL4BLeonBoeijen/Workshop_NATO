@@ -183,3 +183,5 @@ Create a new Fiori Application using the Template Wizard for a *Analytical List 
 * Project Attributes</br>![Project Attributes](../../Images/116.png)
 * Fiori Launchpad Configuration</br>![Fiori LaunchPad Configuration](../../Images/117.png)
 * Preview the Application![Preview](../../Images/118.png)
+
+[Back to Exercises](../README.md)

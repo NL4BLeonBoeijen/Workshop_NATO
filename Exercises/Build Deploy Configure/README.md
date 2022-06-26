@@ -43,3 +43,5 @@ This will open another terminal that will deploy the **.mtar** to the cloud. Thi
 * Now lets start our Launchpad again. ![Launchpad](../../Images/053.png)</br>
 
 > Hint: it is sometimes needed to start a browser in *Private/Incognito mode* and lauch the Fiori Launchpad again, to make your changes available.
+
+[Back to Exercises](../README.md)

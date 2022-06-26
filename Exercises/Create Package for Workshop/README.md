@@ -5,3 +5,5 @@
 * Enter Name **Z_WKSP_##**, where *##* is your assigned number.</br>
 * Enter Description *WKSP Exercises ##*</br>
 * Select <kbd>Next</kbd> and then <kbd>Finish</kbd>
+
+[Back to Exercises](../README.md)

@@ -100,3 +100,5 @@ Enter Fiori Launchpad settings
 ![Source Control Git](../../Images/022.png)</br>
 Select *Always* in the popup.</br>
 ![Always](../../Images/023.png)</br>
+
+[Back to Exercises](../README.md)

@@ -6,7 +6,7 @@ Now we are going to add *Draft version* to the process. To keep the basic versio
 * Change the *sqlViewName*
 * Change the words *Customer* to *Client*, that way we can see which CDS we are using when we test the applications.
 
-``` ABAP CDS
+```ABAP CDS
 @AbapCatalog.sqlViewName: 'ZWS##CDSRAPB2'
 @AbapCatalog.compiler.compareFilter: true
 @AbapCatalog.preserveKey: true
@@ -46,7 +46,7 @@ define root view ZWS##_CDS_RAP_BASIC_DRAFT
 
 * Add the new CDS to the Service Definition as *Clients*
 
-``` ABAP CDS
+```ABAP CDS
 @EndUserText.label: 'Service definition Customers'
 define service ZUI_WKSP_##_RAP {
   expose ZWS##_CDS_RAP_BASIC as Customers;
@@ -60,7 +60,7 @@ define service ZUI_WKSP_##_RAP {
 * Under *persistent table* add **draft table ZWS##_DT_CUST_DR**, use the Code Completion</br>![CodeCompletion](./../../Images/176.png)
 * Use the *Quick Assist* to generate the **Draft table** for you, See the newly added field **"%admin"**
 
-``` ABAP
+```ABAP
 @EndUserText.label : 'Draft table for entity ZWS##_CDS_RAP_BASIC_DRAFT'
 @AbapCatalog.enhancement.category : #EXTENSIBLE_ANY
 @AbapCatalog.tableCategory : #TRANSPARENT
@@ -87,7 +87,7 @@ define table zws##_dt_cust_dr {
 * Set the *field (readonly) id;*
 * Result of the Behavior Definition should look like this.
 
-``` ABAP CDS
+```ABAP CDS
 managed implementation in class zbp_ws##_cds_rap_basic_draft unique;
 with draft;
 
@@ -119,7 +119,7 @@ etag master Lchg_Date_Time
 
 * To fix the option to create multiple draft versions you need to add the option **late numbering** to the Behavior Definition.
 
-``` ABAP CDS
+```ABAP CDS
 managed implementation in class zbp_ws##_cds_rap_basic_draft unique;
 with draft;
 //strict; //Comment this line in to enable strict mode. The strict mode is prerequisite to be future proof regarding syntax and to be able to release your BO.
@@ -143,7 +143,7 @@ etag master Lchg_Date_Time
 * When you activate the new Behavior Definition, you need to fix 2 things.
 * First: use the *Quick Assist* to recreate the draft table, this because we need an extra key field.
 
-``` ABAP
+```ABAP
 @EndUserText.label : 'Draft table for entity ZWS98_CDS_RAP_BASIC_DRAFT'
 @AbapCatalog.enhancement.category : #EXTENSIBLE_ANY
 @AbapCatalog.tableCategory : #TRANSPARENT
@@ -172,7 +172,7 @@ define table zws98_dt_cust_dr {
 * Second: use the *Quick Assist* to add a new method for *late numbering*
 * Implement the new method **adjust_numbers**, to get the latest number from the table
 
-``` ABAP
+```ABAP
  METHOD adjust_numbers.
   IF mapped-client IS NOT INITIAL.
       "  Get max travel ID from standard table
@@ -182,4 +182,5 @@ define table zws98_dt_cust_dr {
     ENDIF.
   ENDMETHOD.
 ```
-  
+
+[Back to Exercises](../README.md)
