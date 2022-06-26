@@ -25,3 +25,7 @@
 ## 12. [Extend Fiori Elements Overview Page Application](./Extend%20Fiori%20OVP/README.md)
 
 ## 13. [RAP Basics](./RAP%20Basics/README.md)
+
+## 14. [RAP Basics Delete, Update, Create](./RAP%20Basic%20CUD/README.md)
+
+## 15. [RAP with Draft version](./RAP%20Draft%20Version/README.md)
