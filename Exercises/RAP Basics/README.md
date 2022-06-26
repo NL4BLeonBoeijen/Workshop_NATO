@@ -271,4 +271,3 @@ define service ZUI_WKSP_##_RAP {
 | Subtitle (optional) | Workshop |
 
 * Run the Preview of the application
-* 
