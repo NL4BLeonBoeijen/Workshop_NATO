@@ -207,6 +207,7 @@ define service ZUI_WKSP_##_RAP {
 ## Create 2 Fiori Elements application with floorplan **List Report Object Page**, for the OData V2 and the OData V4
 
 ### V2
+
 * Logon to your SAP Business Application Studio and create a *New Project From Template*
 * Create a Fiori Appliction with *SAP Fiori Elements* and floorplan **List Report Object Page**
 * Select *Connect to a System* and select your **abap-cloud-default_abap-trial-xxx (BTP)**
@@ -239,6 +240,7 @@ define service ZUI_WKSP_##_RAP {
 * Run the Preview of the application
 
 ### V4
+
 * Logon to your SAP Business Application Studio and create a *New Project From Template*
 * Create a Fiori Appliction with *SAP Fiori Elements* and floorplan **List Report Object Page**
 * Select *Connect to a System* and select your **abap-cloud-default_abap-trial-xxx (BTP)**
@@ -269,53 +271,4 @@ define service ZUI_WKSP_##_RAP {
 | Subtitle (optional) | Workshop |
 
 * Run the Preview of the application
-
-## Create a *Managed Behavior* for your CDS only for Delete
-
-* Right click on your CDS and select **New Behavior Definition**
-* ![NewBehavior](./../../Images/170.png)
-* Set the *alias* to **Customer*
-* Remove the **create** and **update** options:
-
-``` ABAP
-managed implementation in class zbp_ws##_cds_rap_basic unique;
-
-define behavior for ZWS##_CDS_RAP_BASIC alias Customer
-persistent table ZWS##_DT_CUST
-lock master
-authorization master ( instance )
-//etag master <field_name>
-{
-  delete;
-}
-```
-
-* Activate the Behavior
-* Use **CTRL** + **SHIFT** + **1** to open the *Quick Assist* tab.
-* Next click on the Class name in the Behavior and see the proposal in the *Quick Assist* tab.
-* Double click the Proposal to generate the class
-
-``` ABAP
-CLASS zbp_ws##_cds_rap_basic DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zws##_cds_rap_basic.
-ENDCLASS.
-
-CLASS zbp_ws##_cds_rap_basic IMPLEMENTATION.
-ENDCLASS.
-```
-
-``` ABAP
-CLASS lhc_Customer DEFINITION INHERITING FROM cl_abap_behavior_handler.
-  PRIVATE SECTION.
-
-    METHODS get_instance_authorizations FOR INSTANCE AUTHORIZATION
-      IMPORTING keys REQUEST requested_authorizations FOR Customer RESULT result.
-
-ENDCLASS.
-
-CLASS lhc_Customer IMPLEMENTATION.
-
-  METHOD get_instance_authorizations.
-  ENDMETHOD.
-
-ENDCLASS.
-```
+* 
