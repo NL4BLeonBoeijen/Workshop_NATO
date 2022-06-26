@@ -7,3 +7,5 @@
 ### [Exercises](./Exercises/README.md)
 
 ### [Blogs, Tips and Tricks](./Others/Blogs.md)
+
+### [Additional Online Workshops](./Others/AdditionalOnlineWorkshops.md)
