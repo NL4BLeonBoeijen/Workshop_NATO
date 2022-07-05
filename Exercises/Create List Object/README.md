@@ -316,7 +316,7 @@ define view ZWS##_CDS_LIST_OBJECT
 }
 ```
 
-* Result [Result](../../Images/080.png)
+* Result ![Result](../../Images/080.png)
 
 ## Task 7: Move Annotations to Metadata Extension (Optional)
 
