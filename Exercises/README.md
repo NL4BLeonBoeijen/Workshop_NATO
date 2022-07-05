@@ -14,7 +14,7 @@
 
 ## 7. [Create List Report Object Page](./Create%20List%20Object/README.md)
 
-## 8. [External Navigation and Visualiztion](./External%20Navigation%20and%20Vizualisation/README.md)
+## 8. [External Navigation and Visualization](./External%20Navigation%20and%20Vizualisation/README.md)
 
 ## 9. [Overview Page](./Overview%20Page/README.md)
 
