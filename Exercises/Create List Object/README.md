@@ -114,6 +114,7 @@ define view ZWS##_CDS_LIST_OBJECT
       DeliveryStatus,
       BillingStatus,
       @UI.lineItem: [{position: 50},{ label: 'Creation Date' }]
+      @UI.selectionField: [{position: 20}]
       @Consumption.filter.selectionType: #INTERVAL
       cast( left(cast(CreationDateTime as abap.char( 30)),8) as abap.dats) as CreationDate,
       CreationUser,
@@ -209,6 +210,7 @@ define view ZWS##_CDS_LIST_OBJECT
       @UI.fieldGroup: [{position: 20, qualifier: 'STATUS'}]
       BillingStatus,
       @UI.lineItem: [{position: 50},{ label: 'Creation Date' }]
+      @UI.selectionField: [{position: 20}]
       @Consumption.filter.selectionType: #INTERVAL
       cast( left(cast(CreationDateTime as abap.char( 30)),8) as abap.dats) as CreationDate,
       CreationUser,
