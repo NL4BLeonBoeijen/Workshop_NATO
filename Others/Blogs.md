@@ -38,4 +38,4 @@ rm -rf /home/user/.cache
 rm -rf /home/user/.npm
 ```
 
-[Add Images to Fiori Elements Opject PAge](https://blogs.sap.com/2020/09/30/showing-an-avatar-with-initials-or-image-on-the-fiori-element-object-page-for-a-better-user-experience/)
+[Add Images to Fiori Elements Object Page](https://blogs.sap.com/2020/09/30/showing-an-avatar-with-initials-or-image-on-the-fiori-element-object-page-for-a-better-user-experience/)
