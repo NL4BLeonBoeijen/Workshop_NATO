@@ -1,4 +1,4 @@
-# External Navigation and Visualiztion
+# External Navigation and Visualization
 
 ## Task 1: New CDS **ZWS##_CDS_NAV_EXT**
 
