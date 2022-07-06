@@ -107,7 +107,7 @@ ENDCLASS.
 * Run the Class using F9, you will see the message *Data is reset!* in the Console of Eclipse.
 * Check the content of the table by opening the table and then pressing F8 or right click on the table and select *Open With -> Data Preview*.
 
-## Create a CDS **ZWS$$_CDS_RAP_BASIC**
+## Create a CDS **ZWS##_CDS_RAP_BASIC**
 
 * Create a CDS with Template **Define View**
 * Add the word **root** between *define* and *view*
